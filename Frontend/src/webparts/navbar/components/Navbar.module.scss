@@ -1,0 +1,165 @@
+.navbar {
+  background: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.container {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-right: 10px;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+}
+
+.brand img {
+  display: block;
+}
+
+
+.NameApp {
+  color: #183060;
+  font-size: 18px; 
+  margin: 0;
+}
+
+
+.toggleButton {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.navLinks {
+  display: flex;
+  align-items: center;
+  
+}
+
+.navLinks ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.navLinks ul li {
+  position: relative;
+}
+
+.navLinks a {
+  text-decoration: none;
+  color : #183060 ;
+  padding: 10px 15px;
+  display: block;
+  font-weight: 600;
+}
+
+.navLinks a:hover {
+  color: #ff7811;
+}
+
+.active {
+  color: #ff7811 !important;
+}
+
+.profileMenu {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.profileContainer {
+  display: flex;
+  align-items: center;
+  gap: 8px; 
+}
+
+.username {
+  color: #183060;
+  font-weight: 600;
+  white-space: nowrap; 
+}
+
+.profileButton {
+  background: none;
+  border: none;
+  padding: 5px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.profileImage {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #ddd;
+}
+
+.profileAvatar {
+  width: 32px;
+  height: 32px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .toggleButton {
+    display: block;
+    margin-left: auto;
+    }
+
+  .navLinks {
+    position: absolute;
+    top: 60px; 
+    left: 0;
+    width: 455px; 
+    background: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    list-style: none;
+    padding: 10px 0;
+    margin: 0;
+    border-radius: 5px;
+    display: none;
+    flex-direction: column;
+  }
+  
+  .navLinks.show {
+    display: flex;
+  }
+  
+  .navLinks ul {
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .navLinks ul li {
+    padding: 8px 10px;
+    white-space: nowrap;
+  }
+  
+  .navLinks a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #183060;
+    padding: 10px 15px;
+    font-weight: 600;
+  }
+  
+  .navLinks a:hover {
+    background-color: #ff7811;
+    color: white;
+    border-radius: 5px;
+  }
+  
+}

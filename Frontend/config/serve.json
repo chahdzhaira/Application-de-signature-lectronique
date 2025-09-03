@@ -1,0 +1,32 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/spfx-serve.schema.json",
+  "port": 4321,
+  "https": true,
+  "initialPage": "https://{tenantDomain}/_layouts/workbench.aspx",
+  "serveConfigurations": {
+    "default": {
+      "pageUrl": "https://48c2lx.sharepoint.com/sites/App_signature_electronique/Shared%20Documents/Forms/AllItems.aspx",
+      "customActions": {
+        "9347c247-fc6a-47d8-98bb-36f2d7955d23": {
+          "location": "ClientSideExtension.ListViewCommandSet.CommandBar",
+          "properties": {
+            "sampleTextOne": "One item is selected in the list",
+            "sampleTextTwo": "This command is always visible."
+          }
+        }
+      }
+    },
+    "sendForSignatureCommand": {
+      "pageUrl": "https://48c2lx.sharepoint.com/sites/App_signature_electronique/Shared%20Documents/Forms/AllItems.aspx",
+      "customActions": {
+        "9347c247-fc6a-47d8-98bb-36f2d7955d23": {
+          "location": "ClientSideExtension.ListViewCommandSet.CommandBar",
+          "properties": {
+            "sampleTextOne": "One item is selected in the list",
+            "sampleTextTwo": "This command is always visible."
+          }
+        }
+      }
+    }
+  }
+}

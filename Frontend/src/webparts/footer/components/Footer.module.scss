@@ -1,0 +1,63 @@
+.footer {
+  background-color: #f8f9fa;
+  text-align: center;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logosContainer {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 10px;
+}
+
+.logoApp {
+  width : 80px;
+  height : 80px ;
+}
+
+.logoCompany{
+  height : 50px ;
+  margin-top: 10px;
+}
+
+.socialIcons {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 10px;
+}
+
+.icon {
+  width: 40px;
+  height: 32px;
+  color: #ff810a;
+  transition: color 0.3s ease;
+}
+
+.icon:hover {
+  color: #062C6D;
+}
+
+.navbar {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 10px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #062C6D;
+  font-weight: bold;
+}
+
+.navbar a:hover {
+  text-decoration: underline;
+}
+
+.copyright {
+  font-size: 14px;
+  color: #6c757d;
+}

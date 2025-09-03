@@ -1,0 +1,126 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "footer-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/footer/FooterWebPart.js",
+          "manifest": "./src/webparts/footer/FooterWebPart.manifest.json"
+        }
+      ]
+    },
+    "navbar-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/navbar/NavbarWebPart.js",
+          "manifest": "./src/webparts/navbar/NavbarWebPart.manifest.json"
+        }
+      ]
+    },
+    "home-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/home/HomeWebPart.js",
+          "manifest": "./src/webparts/home/HomeWebPart.manifest.json"
+        }
+      ]
+    },
+    "signature-request-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/signatureRequest/SignatureRequestWebPart.js",
+          "manifest": "./src/webparts/signatureRequest/SignatureRequestWebPart.manifest.json"
+        }
+      ]
+    },
+    "signature-request-overview-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/signatureRequestOverview/SignatureRequestOverviewWebPart.js",
+          "manifest": "./src/webparts/signatureRequestOverview/SignatureRequestOverviewWebPart.manifest.json"
+        }
+      ]
+    },
+    "upload-signature-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/uploadSignature/UploadSignatureWebPart.js",
+          "manifest": "./src/webparts/uploadSignature/UploadSignatureWebPart.manifest.json"
+        }
+      ]
+    },
+    "pen-signature-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/penSignature/PenSignatureWebPart.js",
+          "manifest": "./src/webparts/penSignature/PenSignatureWebPart.manifest.json"
+        }
+      ]
+    },
+    "choose-signature-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/chooseSignature/ChooseSignatureWebPart.js",
+          "manifest": "./src/webparts/chooseSignature/ChooseSignatureWebPart.manifest.json"
+        }
+      ]
+    },
+    "send-for-signature-command-command-set": {
+      "components": [
+        {
+          "entrypoint": "./lib/extensions/sendForSignatureCommand/SendForSignatureCommandCommandSet.js",
+          "manifest": "./src/extensions/sendForSignatureCommand/SendForSignatureCommandCommandSet.manifest.json"
+        }
+      ]
+    },
+    "admin-panel-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/adminPanel/AdminPanelWebPart.js",
+          "manifest": "./src/webparts/adminPanel/AdminPanelWebPart.manifest.json"
+        }
+      ]
+    },
+    "contact-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/contact/ContactWebPart.js",
+          "manifest": "./src/webparts/contact/ContactWebPart.manifest.json"
+        }
+      ]
+    },
+    "insights-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/insights/InsightsWebPart.js",
+          "manifest": "./src/webparts/insights/InsightsWebPart.manifest.json"
+        }
+      ]
+    },
+    "testtest-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/testtest/TesttestWebPart.js",
+          "manifest": "./src/webparts/testtest/TesttestWebPart.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "FooterWebPartStrings": "lib/webparts/footer/loc/{locale}.js",
+    "NavbarWebPartStrings": "lib/webparts/navbar/loc/{locale}.js",
+    "HomeWebPartStrings": "lib/webparts/home/loc/{locale}.js",
+    "SignatureRequestWebPartStrings": "lib/webparts/signatureRequest/loc/{locale}.js",
+    "SignatureRequestOverviewWebPartStrings": "lib/webparts/signatureRequestOverview/loc/{locale}.js",
+    "UploadSignatureWebPartStrings": "lib/webparts/uploadSignature/loc/{locale}.js",
+    "PenSignatureWebPartStrings": "lib/webparts/penSignature/loc/{locale}.js",
+    "ChooseSignatureWebPartStrings": "lib/webparts/chooseSignature/loc/{locale}.js",
+    "SendForSignatureCommandCommandSetStrings": "lib/extensions/sendForSignatureCommand/loc/{locale}.js",
+    "AdminPanelWebPartStrings": "lib/webparts/adminPanel/loc/{locale}.js",
+    "ContactWebPartStrings": "lib/webparts/contact/loc/{locale}.js",
+    "InsightsWebPartStrings": "lib/webparts/insights/loc/{locale}.js",
+    "TesttestWebPartStrings": "lib/webparts/testtest/loc/{locale}.js"
+  }
+}

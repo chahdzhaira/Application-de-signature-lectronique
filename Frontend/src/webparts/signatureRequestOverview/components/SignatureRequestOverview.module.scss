@@ -1,0 +1,236 @@
+.container {
+  padding: 20px;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.toastSuccess {
+  background-color: #dff6dd;
+  color: #107c10;
+}
+
+.toastError {
+  background-color: #fde7e9;
+  color: #a4262c;
+}
+
+.error {
+  color: red;
+  font-weight: bold;
+}
+
+.previewContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh; // ou 100% si tu veux que ça remplisse complètement le DialogBody
+  width: 100%;
+  overflow: hidden;
+}
+
+.previewDocument {
+  max-height: 100%;
+  max-width: 100%;
+  border: none;
+}
+
+
+
+
+.wrapper {
+  margin-top: -40px;
+  display: flex;
+  // flex-direction: row;
+  // min-height: 100vh;
+  width: 100%;
+
+}
+
+.sidebar {
+  width: 22%;
+  background-color: #f5f5f5;
+  padding: 20px;
+  box-sizing: border-box;
+  min-height: 100vh;
+}
+
+.sidebarMenu {
+  list-style-type: none;
+  padding: 10;
+  padding-top: 20px;
+
+  li {
+    margin-bottom: 15px;
+
+    a {
+      text-decoration: none;
+      color: #333;
+      font-weight: 500;
+
+      &:hover {
+        color: #0078d4;
+      }
+    }
+  }
+}
+
+.mainContent {
+  flex-grow: 1;
+  width: 60%;
+  padding: 30px;
+  background-color: #fff;
+}
+
+.icons {
+  margin-bottom: -8px;
+  margin-right: 6px;
+  width: 27px;
+  height: 27px;
+  cursor: pointer;
+  color: #ff7811;
+}
+
+.userCard {
+  background-color: white;
+  padding: 1rem;
+  border-radius: 1rem;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 1.5rem;
+}
+
+.avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 0.5rem;
+}
+
+.userName {
+  font-weight: bold;
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+
+.signatureImg {
+  max-width: 100%;
+  max-height: 50px;
+  object-fit: contain;
+}
+
+.active {
+  background-color: #e0e0e06e;
+  border-left: 4px solid #2c64d39f;
+  height: 30px;
+}
+
+.newRow {
+  background-color: #e6f7ff;
+}
+
+.spinner {
+  padding: 80px;
+}
+
+.messageBar {
+  margin-top: -40px;
+}
+
+.btn {
+  border: none;
+  display: block;
+  // margin: 0 auto;
+  margin-left: 0px;
+  margin-right: 0px ;
+  background-color: #183060;
+  border-radius: 4px;
+
+  &:hover {
+    border: none;
+    background-color: #2c64d39f;
+  }
+
+  &:active {
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.3);
+    background-color: #12274d;
+  }
+
+  &:disabled {
+    border: none;
+    background-color: #2c64d39f;
+  }
+}
+
+.buttonGroup {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+}
+
+.downloadIcon {
+  color: white;
+  font-size: 20px; 
+}
+
+.fileNameLink {
+  color: #183060;
+  cursor: pointer;
+  font-weight: 700;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.customModal {
+  width: 80vw;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.modalHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.modalContent {
+  height: 80vh;
+  overflow: hidden;
+}
+
+iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+.modalContent {
+  padding: 1rem;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.tableRow {
+  border-bottom: 1px solid #ddd;
+}
+
+.profileAvatar {
+  width: 32px;
+  height: 32px;
+}
+
+.fui-TableHeader {
+  border-bottom: 1px solid var(--colorNeutralStroke1);
+}
+
+.hiddenCheckbox {
+  display: none !important;
+}

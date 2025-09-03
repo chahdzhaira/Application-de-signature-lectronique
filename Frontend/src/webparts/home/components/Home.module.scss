@@ -1,0 +1,193 @@
+.title {
+  font-size: 21px;
+  font-weight: 600;
+  color: #183060;
+}
+
+.boxesContainer {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+
+.box {
+  border: 2px dashed #999;
+  border-radius: 12px;
+  width: 60%;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #fafafa;
+  transition: border 0.3s ease;
+  padding: 20px;
+
+  h3 {
+    margin: 0 0 16px 0;
+    text-align: center;
+  }
+}
+
+.smallBox {
+  border: 2px dashed #999;
+  border-radius: 12px;
+  width: 30%;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #fafafa;
+  transition: border 0.3s ease;
+  padding: 20px;
+}
+
+.welcomeMessage {
+  font-size: 20px;
+  font-weight: 500;
+  color: white; 
+  width: 50%;
+}
+
+.horizontalBox > div:last-child {
+  width: 35%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.horizontalBox {
+  width: 96.6%;
+  height: 100px;
+  display: flex;
+  flex-direction: row; 
+  justify-content: space-between; 
+  align-items: center;
+  background-color: #18306086;
+  padding: 20px;
+  margin-top: -40px;
+  color: white; 
+}
+
+.cardTitle {
+  color: #183060;
+  text-align: center;
+  margin-right: 20%;
+
+  h3 {
+    margin-bottom: 5px;
+  }
+}
+
+.addIcon {
+  cursor: pointer;
+  color: #183060;
+  font-size: 32px;
+
+  &:hover {
+    color: #2c64d39f;
+  }
+}
+
+.btn {
+  border: none;
+  display: block;
+  margin: 0 auto;
+  background-color: #183060;
+  border-radius: 4px;
+
+  &:hover {
+    border: none;
+    background-color: #2c64d39f;
+  }
+
+  &:active {
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.3);
+    background-color: #12274d;
+  }
+}
+
+.signatureContainer {
+  position: relative;
+  width: 80%;
+  max-height: 100px;
+  padding: 5px;
+  cursor: pointer;
+  transition: box-shadow 0.3s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+
+    .changeButton {
+      opacity: 1;
+      pointer-events: auto;
+    }
+  }
+}
+
+.signatureImage {
+  width: 200px;
+  height: 100px;
+  border-radius: 4px;
+}
+
+.changeButton {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  padding: 6px 12px;
+  background-color: #183060;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 14px;
+  cursor: pointer;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+
+  &:hover {
+    border: none;
+    background-color: #2c64d39f;
+  }
+
+  &:active {
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.3);
+    background-color: #12274d;
+  }
+}
+
+.titleDialog {
+  font-size: 21px;
+  font-weight: 600;
+  color: #183060;
+  padding : 24px 24px 0 ;
+}
+
+.dialogSurface {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 55vw;
+  min-width: 900px;
+  height: 70vh;
+  padding: 0;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  z-index: 1000;
+}
+
+.dialogContent {
+  overflow-y: auto;
+  max-height: calc(70vh - 60px);
+  padding: 20px;
+  box-sizing: border-box;
+}

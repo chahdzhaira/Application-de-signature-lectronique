@@ -1,0 +1,30 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx/command-set-extension-manifest.schema.json",
+
+  "id": "9347c247-fc6a-47d8-98bb-36f2d7955d23",
+  "alias": "SendForSignatureCommandCommandSet",
+  "componentType": "Extension",
+  "extensionType": "ListViewCommandSet",
+
+  // The "*" signifies that the version should be taken from the package.json
+  "version": "*",
+  "manifestVersion": 2,
+
+  // If true, the component can only be installed on sites where Custom Script is allowed.
+  // Components that allow authors to embed arbitrary script code should set this to true.
+  // https://support.office.com/en-us/article/Turn-scripting-capabilities-on-or-off-1f2c515f-5d7e-448a-9fd7-835da935584f
+  "requiresCustomScript": false,
+
+  "items": {
+    "COMMAND_1": {
+      "title": { "default": "Send To be signed" },
+      "iconImageUrl": "data:image/png;base64,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",
+      "type": "command"
+    },
+    // "COMMAND_2": {
+    //   "title": { "default": "Command Two" },
+    // "iconImageUrl": "icons/cancel.png",
+    //   "type": "command"
+    // }
+  }
+}
